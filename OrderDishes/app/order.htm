@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>点餐页面</title>
+<link href="style/reset.css" rel="stylesheet" type="text/css" media="all" />
+<link href="style/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="style/layout.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+<script src="js/jquery.cookie.js" type="text/javascript"></script>
+<script src="js/order.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="body-container">
+	<header id="header">
+		<h3>欢迎点餐</h3>
+		<a href="help.htm">软件使用</a>
+	</header><!--header-->
+	<div id="main">
+		<div class="search_wrap wrap">
+			<input type="search" autocomplete="off" name="keywords" autocorrect="off" class="search" id="search" placeholder="热门菜肴">
+			<button class="search_btn" id="isabtn">搜索</button>
+		</div>
+		<div class="box choose_container">
+			<div>
+				<span>选择菜肴种类:</span>
+				<ul id="kind" class="d_kind clearfix">
+					<li class="selected">显示全部</li>
+					<li data-kind="主食">主食</li>
+					<li data-kind="贵州菜">贵州菜</li>
+					<li data-kind="农家菜">农家菜</li>
+					<li data-kind="川菜">川菜</li>
+					<li data-kind="菜">所有菜类</li>
+					<li data-kind="酒">酒</li>
+					<li data-kind="饮料">饮料</li>
+				</ul><!--kind-->
+			</div>
+			<div>
+				<span>选择排序:</span>
+				<ul id="sort" class="d_kind clearfix">
+					<li class="selected" data-sort="dish_score">星级</li>
+					<li data-sort="dish_price">价格</li>
+					<li>已点人数</li>
+				</ul><!--sort-->
+			</div>
+		</div>
+		
+		<ul id="dish_list" class="wrap clearfix" data-url="" data-num="">
+			 
+		</ul>
+		<div id="dish_more" class="box sub_tl">加载更多</div>
+		
+	</div> <!--main-->
+	<ul id="menu" class="h">
+		<li><a href="home.htm">主页</a></li>
+		<li class="selected"><a href="order.htm">点餐</a></li>
+		<li><a href="bill.htm">我的订单<span id="orderNumTip" style="color: red;position: relative;top:-12px;font-size: 12px">[12]</span></a></li>
+		<li><a href="server.htm">服务</a></li>
+		<li><a href="pay.htm">买单</a></li>
+	</ul><!--sidebar-->
+</div>
+</body>
+</html>

@@ -1,0 +1,986 @@
+2013/03/13 05:27:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'orderdish'' in D:\Program Files\wamp\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\Program Files\wamp\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 D:\Program Files\wamp\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\Program Files\wamp\www\yii\framework\base\CModule.php(104): CModule->getComponent('db')
+#4 D:\Program Files\wamp\www\yii\framework\gii\generators\model\ModelCode.php(57): CModule->__get('db')
+#5 D:\Program Files\wamp\www\yii\framework\web\CFormModel.php(40): ModelCode->init()
+#6 D:\Program Files\wamp\www\yii\framework\gii\CCodeGenerator.php(154): CFormModel->__construct()
+#7 D:\Program Files\wamp\www\yii\framework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#13 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/orderdish/index.php?r=gii/model
+HTTP_REFERER=http://localhost:8888/orderdish/index.php?r=gii/default/index
+---
+2013/03/13 05:34:35 [error] [php] Use of undefined constant username - assumed 'username' (D:\Program Files\wamp\www\orderdish\protected\components\UserIdentity.php:21)
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#1 D:\Program Files\wamp\www\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#2 D:\Program Files\wamp\www\orderdish\protected\controllers\SiteController.php(94): LoginForm->validate()
+#3 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderdish/index.php?r=site/login
+in D:\Program Files\wamp\www\orderdish\protected\components\UserIdentity.php (21)
+in D:\Program Files\wamp\www\orderdish\protected\models\LoginForm.php (52)
+in D:\Program Files\wamp\www\orderdish\protected\controllers\SiteController.php (94)
+2013/03/13 05:40:42 [error] [php] Undefined variable: users (D:\Program Files\wamp\www\orderdish\protected\components\UserIdentity.php:21)
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#1 D:\Program Files\wamp\www\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#2 D:\Program Files\wamp\www\orderdish\protected\controllers\SiteController.php(94): LoginForm->validate()
+#3 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderdish/index.php?r=site/login
+in D:\Program Files\wamp\www\orderdish\protected\components\UserIdentity.php (21)
+in D:\Program Files\wamp\www\orderdish\protected\models\LoginForm.php (52)
+in D:\Program Files\wamp\www\orderdish\protected\controllers\SiteController.php (94)
+2013/03/13 05:54:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ISNOT NULL' at line 1. The SQL statement executed was: SELECT * FROM `user` `t` WHERE id ISNOT NULL.
+in D:\Program Files\wamp\www\orderdish\protected\components\UserIdentity.php (20)
+in D:\Program Files\wamp\www\orderdish\protected\models\LoginForm.php (52)
+in D:\Program Files\wamp\www\orderdish\protected\controllers\SiteController.php (94)
+2013/03/13 05:54:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ISNOT NULL' at line 1. The SQL statement executed was: SELECT * FROM `user` `t` WHERE id ISNOT NULL' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\yii\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\yii\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\Program Files\wamp\www\orderdish\protected\components\UserIdentity.php(20): CActiveRecord->findAll('id ISNOT NULL', Array)
+#4 D:\Program Files\wamp\www\orderdish\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#5 D:\Program Files\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#6 D:\Program Files\wamp\www\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 D:\Program Files\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#8 D:\Program Files\wamp\www\orderdish\protected\controllers\SiteController.php(94): CModel->validate()
+#9 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#10 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#14 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#15 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/orderdish/index.php?r=site/login
+HTTP_REFERER=http://localhost:8888/orderdish/index.php?r=site/login
+---
+2013/03/13 05:55:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dNULL' in 'where clause'. The SQL statement executed was: SELECT * FROM `user` `t` WHERE id != dNULL.
+in D:\Program Files\wamp\www\orderdish\protected\components\UserIdentity.php (20)
+in D:\Program Files\wamp\www\orderdish\protected\models\LoginForm.php (52)
+in D:\Program Files\wamp\www\orderdish\protected\controllers\SiteController.php (94)
+2013/03/13 05:55:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dNULL' in 'where clause'. The SQL statement executed was: SELECT * FROM `user` `t` WHERE id != dNULL' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\yii\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\yii\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\Program Files\wamp\www\orderdish\protected\components\UserIdentity.php(20): CActiveRecord->findAll('id != dNULL', Array)
+#4 D:\Program Files\wamp\www\orderdish\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#5 D:\Program Files\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#6 D:\Program Files\wamp\www\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 D:\Program Files\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#8 D:\Program Files\wamp\www\orderdish\protected\controllers\SiteController.php(94): CModel->validate()
+#9 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#10 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#14 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#15 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/orderdish/index.php?r=site/login
+HTTP_REFERER=http://localhost:8888/orderdish/index.php?r=site/login
+---
+2013/03/13 05:56:26 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `user` `t` WHERE id=:0.
+in D:\Program Files\wamp\www\orderdish\protected\components\UserIdentity.php (20)
+in D:\Program Files\wamp\www\orderdish\protected\models\LoginForm.php (52)
+in D:\Program Files\wamp\www\orderdish\protected\controllers\SiteController.php (94)
+2013/03/13 05:56:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `user` `t` WHERE id=:0' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\yii\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\yii\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\Program Files\wamp\www\orderdish\protected\components\UserIdentity.php(20): CActiveRecord->findAll('id=:0', Array)
+#4 D:\Program Files\wamp\www\orderdish\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#5 D:\Program Files\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#6 D:\Program Files\wamp\www\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 D:\Program Files\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#8 D:\Program Files\wamp\www\orderdish\protected\controllers\SiteController.php(94): CModel->validate()
+#9 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#10 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#14 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#15 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/orderdish/index.php?r=site/login
+HTTP_REFERER=http://localhost:8888/orderdish/index.php?r=site/login
+---
+2013/03/13 06:07:18 [error] [php] Undefined variable: user (D:\Program Files\wamp\www\orderdish\protected\components\UserIdentity.php:22)
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#1 D:\Program Files\wamp\www\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#2 D:\Program Files\wamp\www\orderdish\protected\controllers\SiteController.php(94): LoginForm->validate()
+#3 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderdish/index.php?r=site/login
+in D:\Program Files\wamp\www\orderdish\protected\components\UserIdentity.php (22)
+in D:\Program Files\wamp\www\orderdish\protected\models\LoginForm.php (52)
+in D:\Program Files\wamp\www\orderdish\protected\controllers\SiteController.php (94)
+2013/03/13 12:42:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\Program Files\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\Program Files\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\Program Files\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\Program Files\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('user/admin')
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderdish/index.php?r=user/admin
+HTTP_REFERER=http://localhost:8888/orderdish/index.php?r=user
+---
+2013/03/13 12:57:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\Program Files\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\Program Files\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\Program Files\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\Program Files\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('dishkind/admin')
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderdish/index.php?r=dishkind/admin
+HTTP_REFERER=http://localhost:8888/orderdish/index.php?r=dishkind/view&id=7
+---
+2013/03/13 12:57:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\Program Files\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\Program Files\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\Program Files\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\Program Files\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('dishkind/admin')
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderdish/index.php?r=dishkind/admin
+HTTP_REFERER=http://localhost:8888/orderdish/index.php?r=dishkind/view&id=7
+---
+2013/03/13 12:57:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\Program Files\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\Program Files\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\Program Files\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\Program Files\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('delete')
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('dishkind/delete')
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderdish/index.php?r=dishkind/delete&id=7
+HTTP_REFERER=http://localhost:8888/orderdish/index.php?r=dishkind/view&id=7
+---
+2013/03/13 13:24:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in D:\Program Files\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/login')
+#3 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderdish/index.php/site/site/login
+HTTP_REFERER=http://localhost:8888/orderdish/index.php/site/page?view=about
+---
+2013/03/13 13:26:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in D:\Program Files\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/login')
+#3 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderdish/index.php/site/site/login
+HTTP_REFERER=http://localhost:8888/orderdish/index.php/site/page?view=about
+---
+2013/03/13 13:26:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in D:\Program Files\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/login')
+#3 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderdish/index.php/site/site/login
+HTTP_REFERER=http://localhost:8888/orderdish/index.php/site/page?view=about
+---
+2013/03/13 13:26:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in D:\Program Files\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/login')
+#3 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderdish/index.php/site/site/login
+HTTP_REFERER=http://localhost:8888/orderdish/index.php/site/page?view=about
+---
+2013/03/13 13:26:27 [error] [php] Undefined variable: hasName (D:\Program Files\wamp\www\orderdish\protected\components\UserIdentity.php:34)
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#1 D:\Program Files\wamp\www\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#2 D:\Program Files\wamp\www\orderdish\protected\controllers\SiteController.php(94): LoginForm->validate()
+#3 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderdish/index.php/site/login
+in D:\Program Files\wamp\www\orderdish\protected\components\UserIdentity.php (34)
+in D:\Program Files\wamp\www\orderdish\protected\models\LoginForm.php (52)
+in D:\Program Files\wamp\www\orderdish\protected\controllers\SiteController.php (94)
+2013/03/13 13:27:15 [error] [php] Undefined variable: hasName (D:\Program Files\wamp\www\orderdish\protected\components\UserIdentity.php:34)
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#1 D:\Program Files\wamp\www\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#2 D:\Program Files\wamp\www\orderdish\protected\controllers\SiteController.php(94): LoginForm->validate()
+#3 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderdish/index.php/site/login
+in D:\Program Files\wamp\www\orderdish\protected\components\UserIdentity.php (34)
+in D:\Program Files\wamp\www\orderdish\protected\models\LoginForm.php (52)
+in D:\Program Files\wamp\www\orderdish\protected\controllers\SiteController.php (94)
+2013/03/13 13:44:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dish".' in D:\Program Files\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('dish')
+#1 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('dish')
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/dish')
+#3 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderdish/index.php/site/dish
+HTTP_REFERER=http://localhost:8888/orderdish/index.php/site/index
+---
+2013/03/13 15:58:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\Program Files\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\Program Files\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\Program Files\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\Program Files\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('dish/admin')
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderdish/index.php/dish/admin
+HTTP_REFERER=http://localhost:8888/orderdish/index.php/dish/create
+---
+2013/03/13 15:59:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\Program Files\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\Program Files\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\Program Files\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\Program Files\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('dish/admin')
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderdish/index.php/dish/admin
+HTTP_REFERER=http://localhost:8888/orderdish/index.php/dish/create
+---
+2013/03/13 16:14:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\Program Files\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\Program Files\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\Program Files\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\Program Files\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('dish/admin')
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderdish/index.php/dish/admin
+HTTP_REFERER=http://localhost:8888/orderdish/index.php/dish/index
+---
+2013/03/13 16:30:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\Program Files\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\Program Files\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\Program Files\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\Program Files\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('dish/admin')
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderdish/index.php/dish/admin
+HTTP_REFERER=http://localhost:8888/orderdish/index.php/dish/index
+---
+2013/03/13 16:31:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\Program Files\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\Program Files\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\Program Files\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\Program Files\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('dish/admin')
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderdish/index.php/dish/admin
+HTTP_REFERER=http://localhost:8888/orderdish/index.php/dish
+---
+2013/03/13 16:32:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\Program Files\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\Program Files\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\Program Files\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\Program Files\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('dish/admin')
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderdish/index.php/dish/admin
+HTTP_REFERER=http://localhost:8888/orderdish/index.php/dish/update/2
+---
+2013/03/13 17:05:10 [error] [exception.CException] exception 'CException' with message 'ApiController cannot find the requested view "index".' in D:\Program Files\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#1 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(31): CController->render('index')
+#2 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionIndex()
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api')
+#8 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/orderdish/index.php/api
+---
+2013/03/13 17:14:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getdish".' in D:\Program Files\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('getdish')
+#1 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getdish')
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getdish')
+#3 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderdish/index.php/api/getdish?dishkind=%E9%85%92&from=1&offset=20&order=price&callback=fn
+---
+2013/03/13 17:14:24 [error] [php] Undefined variable: fid (D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php:19)
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\Program Files\wamp\www\orderdish\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderdish/index.php/api/gmp?dishkind=%E9%85%92&from=1&offset=20&order=price&callback=fn
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (19)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/13 17:14:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gmp".' in D:\Program Files\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('gmp')
+#1 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('gmp')
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/gmp')
+#3 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderdish/index.php/api/gmp?dishkind=%E9%85%92&from=1&offset=20&order=price&callback=fn
+---
+2013/03/13 17:14:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'order clause'. The SQL statement executed was: SELECT * FROM dish WHERE dish_kind='酒' ORDER BY price ASC LIMIT 1, 20.
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (20)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/13 17:14:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'order clause'. The SQL statement executed was: SELECT * FROM dish WHERE dish_kind='酒' ORDER BY price ASC LIMIT 1, 20' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(20): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionGetdish()
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getdish')
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getdish')
+#8 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/orderdish/index.php/api/getdish?dishkind=%E9%85%92&from=1&offset=20&order=price&callback=fn
+---
+2013/03/14 02:45:08 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'order clause'. The SQL statement executed was: SELECT * FROM dish WHERE dish_kind LIKE '%��%' ORDER BY price ASC LIMIT 1, 20.
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (23)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 02:45:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'order clause'. The SQL statement executed was: SELECT * FROM dish WHERE dish_kind LIKE '%��%' ORDER BY price ASC LIMIT 1, 20' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(23): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionGetdish()
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getdish')
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getdish')
+#8 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/orderdish/index.php/api/getdish?dishkind=��&from=1&offset=20&order=price&callback=fn
+---
+2013/03/14 02:45:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'order clause'. The SQL statement executed was: SELECT * FROM dish WHERE dish_kind LIKE '%酒%' ORDER BY price ASC LIMIT 1, 20.
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (23)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 02:45:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'order clause'. The SQL statement executed was: SELECT * FROM dish WHERE dish_kind LIKE '%酒%' ORDER BY price ASC LIMIT 1, 20' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(23): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionGetdish()
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getdish')
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getdish')
+#8 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/orderdish/index.php/api/getdish?dishkind=%E9%85%92&from=1&offset=20&order=price&callback=fn
+---
+2013/03/14 02:45:45 [error] [php] Undefined variable: dishkind (D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php:21)
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\Program Files\wamp\www\orderdish\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderdish/index.php/api/getdish?from=1&offset=20&order=dish_price&callback=fn
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (21)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 03:16:03 [error] [php] Undefined index: callback (D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php:37)
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\Program Files\wamp\www\orderdish\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderdish/index.php/api/getrecdish?dishkind=%E8%B4%B5%E5%B7%9E%E8%8F%9C&from=0&offset=6&order=dish_score
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (37)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 03:19:33 [error] [php] Undefined variable: order (D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php:22)
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\Program Files\wamp\www\orderdish\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderdish/index.php/api/getdish?dishkind=
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (22)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 03:22:03 [error] [php] Undefined variable: order (D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php:22)
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\Program Files\wamp\www\orderdish\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderdish/index.php/api/getdish?dishkind=%22%E5%86%9C%E5%AE%B6%E8%8F%9C%22&from=0&offset=6&order=dish_score
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (22)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 03:24:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'eBY dish_price DESC LIMIT 0, 6' at line 1. The SQL statement executed was: SELECT * FROM dish WHERE dish_kind LIKE '%null%' ORDER eBY dish_price DESC LIMIT 0, 6.
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (24)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 03:24:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'eBY dish_price DESC LIMIT 0, 6' at line 1. The SQL statement executed was: SELECT * FROM dish WHERE dish_kind LIKE '%null%' ORDER eBY dish_price DESC LIMIT 0, 6' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(24): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionGetdish()
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getdish')
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getdish')
+#8 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/orderdish/index.php/api/getdish?dishkind=null&from=0&offset=6&order=dish_price&callback=jQuery19108435918528120965_1363231371296&_=1363231371314
+HTTP_REFERER=http://localhost:8888/dc/order.htm
+---
+2013/03/14 03:24:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'eBY dish_score DESC LIMIT 0, 6' at line 1. The SQL statement executed was: SELECT * FROM dish WHERE dish_kind LIKE '%null%' ORDER eBY dish_score DESC LIMIT 0, 6.
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (24)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 03:24:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'eBY dish_score DESC LIMIT 0, 6' at line 1. The SQL statement executed was: SELECT * FROM dish WHERE dish_kind LIKE '%null%' ORDER eBY dish_score DESC LIMIT 0, 6' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(24): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionGetdish()
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getdish')
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getdish')
+#8 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/orderdish/index.php/api/getdish?dishkind=null&from=0&offset=6&order=dish_score&callback=jQuery191030227312073111534_1363231458328&_=1363231458329
+HTTP_REFERER=http://localhost:8888/dc/order.htm
+---
+2013/03/14 03:24:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'eBY dish_score DESC LIMIT 0, 6' at line 1. The SQL statement executed was: SELECT * FROM dish WHERE dish_kind LIKE '%null%' ORDER eBY dish_score DESC LIMIT 0, 6.
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (24)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 03:24:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'eBY dish_score DESC LIMIT 0, 6' at line 1. The SQL statement executed was: SELECT * FROM dish WHERE dish_kind LIKE '%null%' ORDER eBY dish_score DESC LIMIT 0, 6' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(24): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionGetdish()
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getdish')
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getdish')
+#8 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/orderdish/index.php/api/getdish?dishkind=null&from=0&offset=6&order=dish_score&callback=jQuery191030227312073111534_1363231458328&_=1363231458329
+---
+2013/03/14 03:25:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'eBY dish_score DESC LIMIT 0, 6' at line 1. The SQL statement executed was: SELECT * FROM dish WHERE dish_kind LIKE '%null%' ORDER eBY dish_score DESC LIMIT 0, 6.
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (24)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 03:25:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'eBY dish_score DESC LIMIT 0, 6' at line 1. The SQL statement executed was: SELECT * FROM dish WHERE dish_kind LIKE '%null%' ORDER eBY dish_score DESC LIMIT 0, 6' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(24): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionGetdish()
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getdish')
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getdish')
+#8 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/orderdish/index.php/api/getdish?dishkind=null&from=0&offset=6&order=dish_score&callback=jQuery191030227312073111534_1363231458328&_=1363231458329
+---
+2013/03/14 03:25:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'eBY dish_score DESC LIMIT 0, 6' at line 1. The SQL statement executed was: SELECT * FROM dish WHERE dish_kind LIKE '%null%' ORDER eBY dish_score DESC LIMIT 0, 6.
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (24)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 03:25:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'eBY dish_score DESC LIMIT 0, 6' at line 1. The SQL statement executed was: SELECT * FROM dish WHERE dish_kind LIKE '%null%' ORDER eBY dish_score DESC LIMIT 0, 6' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(24): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionGetdish()
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getdish')
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getdish')
+#8 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/orderdish/index.php/api/getdish?dishkind=null&from=0&offset=6&order=dish_score&callback=jQuery191030227312073111534_1363231458328&_=1363231458329
+---
+2013/03/14 03:25:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'eBY dish_score DESC LIMIT 0, 6' at line 1. The SQL statement executed was: SELECT * FROM dish  ORDER eBY dish_score DESC LIMIT 0, 6.
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (24)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 03:25:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'eBY dish_score DESC LIMIT 0, 6' at line 1. The SQL statement executed was: SELECT * FROM dish  ORDER eBY dish_score DESC LIMIT 0, 6' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(24): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionGetdish()
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getdish')
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getdish')
+#8 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/orderdish/index.php/api/getdish?dishkind=&from=0&offset=6&order=dish_score&callback=jQuery19107097711085807532_1363231558285&_=1363231558286
+HTTP_REFERER=http://localhost:8888/dc/order.htm
+---
+2013/03/14 03:26:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'eBY dish_score DESC LIMIT 0, 6' at line 1. The SQL statement executed was: SELECT * FROM dish  ORDER eBY dish_score DESC LIMIT 0, 6.
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (24)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 03:26:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'eBY dish_score DESC LIMIT 0, 6' at line 1. The SQL statement executed was: SELECT * FROM dish  ORDER eBY dish_score DESC LIMIT 0, 6' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(24): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionGetdish()
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getdish')
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getdish')
+#8 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/orderdish/index.php/api/getdish?dishkind=&from=0&offset=6&order=dish_score&callback=jQuery19107097711085807532_1363231558285&_=1363231558286
+---
+2013/03/14 03:42:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'aORDER BY dish_price DESC' at line 1. The SQL statement executed was: SELECT * FROM dish WHERE dish_name='%菜%' OR dish_kind='%菜%' aORDER BY dish_price DESC.
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (51)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 03:42:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'aORDER BY dish_price DESC' at line 1. The SQL statement executed was: SELECT * FROM dish WHERE dish_name='%菜%' OR dish_kind='%菜%' aORDER BY dish_price DESC' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(51): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionSearchdish()
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('searchdish')
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/searchdish')
+#8 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/orderdish/index.php/api/searchdish?condition=%E8%8F%9C&callback=?
+---
+2013/03/14 03:43:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'aORDER BY dish_price DESC' at line 1. The SQL statement executed was: SELECT * FROM dish WHERE dish_name LIKE '%菜%' OR dish_kind LIKE '%菜%' aORDER BY dish_price DESC.
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (51)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 03:43:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'aORDER BY dish_price DESC' at line 1. The SQL statement executed was: SELECT * FROM dish WHERE dish_name LIKE '%菜%' OR dish_kind LIKE '%菜%' aORDER BY dish_price DESC' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(51): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionSearchdish()
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('searchdish')
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/searchdish')
+#8 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/orderdish/index.php/api/searchdish?condition=%E8%8F%9C&callback=?
+---
+2013/03/14 06:28:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getorderdish".' in D:\Program Files\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('getorderdish')
+#1 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getorderdish')
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getorderdis...')
+#3 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderdish/index.php/api/getorderdish?orderdish=13,2,14,3,16,7,8&callback=jQuery19103345202726777643_1363242501464&_=1363242501465
+HTTP_REFERER=http://localhost:8888/dc/bill.htm
+---
+2013/03/14 06:28:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getorderdish".' in D:\Program Files\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('getorderdish')
+#1 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getorderdish')
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getorderdis...')
+#3 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderdish/index.php/api/getorderdish?orderdish=13,2,14,3,16,7,8&callback=jQuery19103345202726777643_1363242501464&_=1363242501465
+---
+2013/03/14 06:28:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getorderdish".' in D:\Program Files\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('getorderdish')
+#1 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getorderdish')
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getorderdis...')
+#3 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderdish/index.php/api/getorderdish?orderdish=13,2,14,3,16,7,8&callback=jQue
+---
+2013/03/14 06:29:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getorderdish".' in D:\Program Files\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('getorderdish')
+#1 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getorderdish')
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getorderdis...')
+#3 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderdish/index.php/api/getorderdish?orderdish=13,2,14,3,16,7,8&callback=jQue
+---
+2013/03/14 06:29:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getorderdish".' in D:\Program Files\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('getorderdish')
+#1 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getorderdish')
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getorderdis...')
+#3 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderdish/index.php/api/getorderdish?orderdish=13,2,14,3,16,7,8&callback=jQue
+---
+2013/03/14 06:29:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getorderdish".' in D:\Program Files\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('getorderdish')
+#1 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getorderdish')
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getorderdis...')
+#3 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderdish/index.php/api/getorderdish?orderdish=13,2,14,3,16,7,8&callback=jQue
+---
+2013/03/14 06:29:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getorderdish".' in D:\Program Files\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('getorderdish')
+#1 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('getorderdish')
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/getorderdis...')
+#3 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderdish/index.php/api/getorderdish?orderdish=1,3&callback=fn
+---
+2013/03/14 14:02:40 [error] [exception.CException] exception 'CException' with message 'ApiController and its behaviors do not have a method or closure named "vertifyAccount".' in D:\Program Files\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(101): CComponent->__call('vertifyAccount', Array)
+#1 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(101): ApiController->vertifyAccount(''sy'', '"111"')
+#2 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionAccount()
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('account')
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/account')
+#8 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/orderdish/index.php/api/account?username='sy'&password=%22111%22&callback=fn
+---
+2013/03/14 14:03:33 [error] [php] Undefined variable: callback_fn (D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php:100)
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\Program Files\wamp\www\orderdish\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderdish/index.php/api/account?username='sy'&password=%22111%22&dcallback=fn
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (100)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 14:44:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sy' in 'where clause'. The SQL statement executed was: SELECT * FROM user WHERE username=sy AND password=111.
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (107)
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (100)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 14:44:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sy' in 'where clause'. The SQL statement executed was: SELECT * FROM user WHERE username=sy AND password=111' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(107): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(100): ApiController->vertifyAccount('sy', '111')
+#3 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionAccount()
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('account')
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/account')
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderdish/index.php/api/account?username=sy&password=111&callback=jQuery19104031971318181604_1363272281188&_=1363272281189
+HTTP_REFERER=http://localhost:8888/dc/help.htm
+---
+2013/03/14 14:45:02 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sy' in 'where clause'. The SQL statement executed was: SELECT * FROM user WHERE username=sy AND password=111.
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (107)
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (100)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 14:45:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sy' in 'where clause'. The SQL statement executed was: SELECT * FROM user WHERE username=sy AND password=111' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(107): CDbCommand->queryAll()
+#2 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(100): ApiController->vertifyAccount('sy', '111')
+#3 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionAccount()
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('account')
+#8 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/account')
+#9 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderdish/index.php/api/account?username=sy&password=111&callback=jQuery19104031971318181604_1363272281188&_=1363272281189
+---
+2013/03/14 16:56:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'time()))' at line 1. The SQL statement executed was: INSERT INTO `server` VALUES (null, '001', '催促送餐', '0', date('Y-m-d H:i:s',time())).
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (121)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 16:56:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'time()))' at line 1. The SQL statement executed was: INSERT INTO `server` VALUES (null, '001', '催促送餐', '0', date('Y-m-d H:i:s',time()))' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(121): CDbCommand->execute()
+#1 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionCallserver()
+#2 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('callserver')
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/callserver')
+#7 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/orderdish/index.php/api/callserver?tableid=001&content=%E5%82%AC%E4%BF%83%E9%80%81%E9%A4%90
+HTTP_REFERER=http://localhost:8888/dc/server.htm
+---
+2013/03/14 16:57:32 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'time()))' at line 1. The SQL statement executed was: INSERT INTO `server` VALUES (null, '001', '催促送餐', '0', date('Y-m-d H:i:s',time())).
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (121)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 16:57:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'time()))' at line 1. The SQL statement executed was: INSERT INTO `server` VALUES (null, '001', '催促送餐', '0', date('Y-m-d H:i:s',time()))' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(121): CDbCommand->execute()
+#1 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionCallserver()
+#2 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('callserver')
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/callserver')
+#7 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/orderdish/index.php/api/callserver?tableid=001&content=%E5%82%AC%E4%BF%83%E9%80%81%E9%A4%90
+---
+2013/03/14 16:58:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '16:58:15)' at line 1. The SQL statement executed was: INSERT INTO `server` VALUES (null, '001', '催促送餐', '0', 2013-03-14 16:58:15).
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (122)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 16:58:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '16:58:15)' at line 1. The SQL statement executed was: INSERT INTO `server` VALUES (null, '001', '催促送餐', '0', 2013-03-14 16:58:15)' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(122): CDbCommand->execute()
+#1 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionCallserver()
+#2 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('callserver')
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/callserver')
+#7 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/orderdish/index.php/api/callserver?tableid=001&content=%E5%82%AC%E4%BF%83%E9%80%81%E9%A4%90
+---
+2013/03/14 17:41:44 [error] [php] Undefined variable: from (D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php:134)
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\Program Files\wamp\www\orderdish\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderdish/index.php/api/selectserver?from=2
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (134)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 17:41:59 [error] [php] Undefined variable: dishes (D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php:138)
+Stack trace:
+#0 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\Program Files\wamp\www\orderdish\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderdish/index.php/api/selectserver?from=2&callback=fn
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (138)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 18:16:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: UPDATE server SET server_state=1, server_time='2013-03-14 18:16:52' WHERE server_id=7 ).
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (151)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 18:16:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: UPDATE server SET server_state=1, server_time='2013-03-14 18:16:52' WHERE server_id=7 )' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(151): CDbCommand->execute()
+#1 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionServer()
+#2 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('server')
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/server')
+#7 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/orderdish/index.php/api/server?serverid=7
+---
+2013/03/14 18:22:50 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1. The SQL statement executed was: INSERT INTO `server` VALUES (null, '001', '呼叫结账', '0', '2013-03-14 18:22:50').
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (122)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 18:22:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1. The SQL statement executed was: INSERT INTO `server` VALUES (null, '001', '呼叫结账', '0', '2013-03-14 18:22:50')' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(122): CDbCommand->execute()
+#1 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionCallserver()
+#2 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('callserver')
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/callserver')
+#7 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/orderdish/index.php/api/callserver?tableid=001&content=%E5%91%BC%E5%8F%AB%E7%BB%93%E8%B4%A6
+HTTP_REFERER=http://localhost:8888/dc/bill.htm
+---
+2013/03/14 18:22:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1. The SQL statement executed was: INSERT INTO `server` VALUES (null, '001', '呼叫结账', '0', '2013-03-14 18:22:53').
+in D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php (122)
+in D:\Program Files\wamp\www\orderdish\index.php (13)
+2013/03/14 18:22:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1. The SQL statement executed was: INSERT INTO `server` VALUES (null, '001', '呼叫结账', '0', '2013-03-14 18:22:53')' in D:\Program Files\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\Program Files\wamp\www\orderdish\protected\controllers\ApiController.php(122): CDbCommand->execute()
+#1 D:\Program Files\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionCallserver()
+#2 D:\Program Files\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\Program Files\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\Program Files\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('callserver')
+#6 D:\Program Files\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/callserver')
+#7 D:\Program Files\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\Program Files\wamp\www\orderdish\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/orderdish/index.php/api/callserver?tableid=001&content=%E5%91%BC%E5%8F%AB%E7%BB%93%E8%B4%A6
+---

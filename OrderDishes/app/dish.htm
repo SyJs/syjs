@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>菜肴详情</title>
+<link href="style/reset.css" rel="stylesheet" type="text/css" media="all" />
+<link href="style/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="style/layout.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+<script src="js/jquery.cookie.js" type="text/javascript"></script>
+<script src="js/dish.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="body-container">
+	<header id="header">
+		<h3>菜肴详情</h3>
+		<a class="return"  onclick="window.history.go(-1);">返回</a>
+		<a href="help.htm">软件使用</a>
+	</header><!--header-->
+	<div id="main">
+		<div id="dishIntr" class="box dish_intr clearfix">
+			
+		</div>
+
+	</div> <!--main-->
+	<ul id="menu" class="h">
+		<li class="selected"><a href="home.htm">主页</a></li>
+		<li><a href="order.htm">点餐</a></li>
+		<li><a href="bill.htm">我的订单<span id="orderNumTip" style="color: red;position: relative;top:-12px;font-size: 12px">[12]</span></a></li>
+		<li><a href="server.htm">服务</a></li>
+		<li><a href="pay.htm">买单</a></li>
+	</ul><!--sidebar-->
+</div>
+</body>
+</html>
